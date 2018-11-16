@@ -1,0 +1,38 @@
+{
+    "elements": [{
+        "type": "Select",
+        "name": "Calculation",
+        "caption": "Calculation",
+        "options": [
+            { "label": "OR", "value": 1 },
+            { "label": "AND", "value": 2 },
+            { "label": "NOR", "value": 3 },
+            { "label": "NAND", "value": 4 }
+        ]
+    }, {
+        "type": "List",
+        "name": "Input",
+        "caption": "Input",
+        "add": true,
+        "delete": true,
+        "columns": [{
+            "label": "Variable",
+            "name": "ID",
+            "width": "auto",
+            "add": 0,
+            "edit": {
+                "type": "SelectVariable"
+            }
+        },
+        {
+            "label": "Invert",
+            "name": "Invert",
+            "width": "100px",
+            "add": false,
+            "edit": {
+                "type": "CheckBox"
+            }
+        }],
+        "values": []
+    }]
+}

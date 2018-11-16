@@ -1,0 +1,11 @@
+{
+    "id": "{AC0566EB-7384-4F06-A445-292255B0D1B2}",
+    "name": "LogikGatter",
+    "type": 3,
+    "vendor": "",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LG"
+}
