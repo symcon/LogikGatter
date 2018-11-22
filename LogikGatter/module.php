@@ -23,11 +23,39 @@ class LogikGatter extends IPSModule {
         parent::ApplyChanges();
 
         foreach (json_decode($this->ReadPropertyString("Input"), true) as $input) {
-            $this->SendDebug('Register Message', $input["ID"], 0);
             $this->RegisterMessage($input["ID"], 10603);
         }
 
         $this->UpdateOutput();
+
+        switch ($this->ReadPropertyInteger("Calculation")) {
+            case 1: // OR
+                $this->SetSummary("OR");
+                break;
+
+            case 2: // AND
+                $this->SetSummary("AND");
+                break;
+
+            case 3: // NOR
+                $this->SetSummary("NOR");
+                break;
+
+            case 4: // NAND
+                $this->SetSummary("NAND");
+                break;
+        }
+
+        if (method_exists($this, 'GetReferenceList')) {
+            $refs = $this->GetReferenceList();
+            foreach ($refs as $ref) {
+                $this->UnregisterReference($ref);
+            }
+
+            foreach (json_decode($this->ReadPropertyString('Input'), true) as $input) {
+                $this->RegisterReference($input['ID']);
+            }
+        }
     }
 
     public function MessageSink($timestamp, $senderID, $messageID, $data) {
