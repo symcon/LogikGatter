@@ -26,8 +26,14 @@ class LogikGatter extends IPSModule
         //Never delete this line!
         parent::ApplyChanges();
 
+        //Delete all registrations in order to readd them
+        foreach ($this->GetMessageList() as $senderID => $messages) {
+            foreach ($messages as $message) {
+                $this->UnregisterMessage($senderID, $message);
+            }
+        }
         foreach (json_decode($this->ReadPropertyString('Input'), true) as $input) {
-            $this->RegisterMessage($input['ID'], 10603);
+            $this->RegisterMessage($input['ID'], VM_UPDATE);
         }
 
         $this->UpdateOutput();
