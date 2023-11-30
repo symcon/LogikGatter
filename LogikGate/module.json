@@ -1,6 +1,6 @@
 {
     "id": "{AC0566EB-7384-4F06-A445-292255B0D1B2}",
-    "name": "LogikGatter",
+    "name": "LogikGate",
     "type": 3,
     "vendor": "",
     "aliases": [],
@@ -8,5 +8,5 @@
     "childRequirements": [],
     "implemented": [],
     "prefix": "LG",
-    "url": "https://github.com/symcon/LogikGatter/tree/master/LogikGatter"
+    "url": "https://www.symcon.de/en/service/documentation/module-reference/logik-gate/"
 }
