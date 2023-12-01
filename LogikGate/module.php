@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-class LogikGatter extends IPSModule
+class LogikGate extends IPSModule
 {
     public function Create()
     {

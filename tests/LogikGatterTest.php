@@ -8,8 +8,8 @@ class LogikGatterTest extends TestCaseSymconValidation
     {
         $this->validateLibrary(__DIR__ . '/..');
     }
-    public function testValidateLogikGatterModule(): void
+    public function testValidateLogikGateModule(): void
     {
-        $this->validateModule(__DIR__ . '/../LogikGatter');
+        $this->validateModule(__DIR__ . '/../LogikGate');
     }
 }
