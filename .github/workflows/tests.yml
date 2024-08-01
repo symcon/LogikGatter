@@ -12,9 +12,5 @@ jobs:
     - uses: actions/checkout@master
       with:
         submodules: true
-
-    - name: Install latest PHPUnit
-      run: wget https://phar.phpunit.de/phpunit.phar
-
-    - name: Run Tests
-      run: phpdbg -qrr phpunit.phar tests --configuration tests/phpunit.xml
+    - name: Run tests 
+      uses: symcon/action-tests@master
