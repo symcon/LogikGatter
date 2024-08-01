@@ -6,7 +6,7 @@
   </php>
   <source>
     <include>
-      <directory suffix=".php">../LogikGate</directory>
+      <directory suffix=".php">../LogicGate</directory>
     </include>
   </source>
 </phpunit>

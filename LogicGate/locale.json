@@ -10,8 +10,8 @@
             "Variable": "Variable",
             "Invert": "Invertieren",
             "Output": "Ausgabe",
-            "https://www.symcon.de/en/service/documentation/module-reference/logik-gate/": "https://www.symcon.de/de/service/dokumentation/modulreferenz/logikgatter/",
-            "LogikGate": "LogikGatter"
+            "https://www.symcon.de/en/service/documentation/module-reference/logic-gate/": "https://www.symcon.de/de/service/dokumentation/modulreferenz/logikgatter/",
+            "LogicGate": "LogikGatter"
         }
     }
 }
