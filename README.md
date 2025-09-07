@@ -6,5 +6,5 @@
 
 Folgende Module beinhaltet das LogikGatter Repository:
 
-- __LogikGatter__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/logikgatter))  
+- __LogikGatter__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/logikgatter/))  
 	Verknüpft Variablen durch logische Operationen
